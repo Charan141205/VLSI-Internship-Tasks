@@ -49,18 +49,3 @@ The task included:
 - **Behavioral Simulation**
 - **GitHub**
 
-## Repository Structure
-
-```text
-VLSI-Internship-Tasks/
-│
-├── Task-1/
-│
-├── Task-2/
-│
-└── Task-3/
-    ├── D_Flip_Flop/
-    ├── JK_Flip_Flop/
-    ├── 4_Bit_Register/
-    ├── 4_Bit_Counter/
-    └── Report/
