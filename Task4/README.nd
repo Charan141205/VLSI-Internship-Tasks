@@ -1,1 +1,77 @@
+# VLSI Design Internship – Task 4
 
+## RTL Design of Finite State Machines (FSM) and Control Units
+
+This repository contains the Verilog RTL designs, testbenches, simulation waveforms, and report completed as part of VLSI Design Internship Task 4.
+
+## Tools Used
+
+- Xilinx Vivado
+- Verilog HDL
+- Vivado Behavioral Simulation
+
+## Designs Implemented
+
+### 1. Moore FSM
+
+A three-state FSM with the following transition sequence:
+
+S0 → S1 → S2 → S0
+
+State encoding:
+
+| State | Encoding |
+|---|---|
+| S0 | 00 |
+| S1 | 01 |
+| S2 | 10 |
+
+### 2. Mealy FSM
+
+The output becomes HIGH when:
+
+State = S1  
+Input = 1
+
+The output therefore depends on both the current state and input.
+
+### 3. Traffic Light Controller
+
+The controller uses three states and three light outputs:
+
+| Light | Encoding |
+|---|---|
+| RED | 100 |
+| GREEN | 001 |
+| YELLOW | 010 |
+
+The simulated sequence is:
+
+RED → GREEN → YELLOW → RED
+
+### 4. 1011 Sequence Detector
+
+A serial FSM that detects the binary pattern:
+
+1011
+
+The detector asserts the `detected` output when the complete pattern is received.
+
+## Verification
+
+Each RTL design was verified using a dedicated Verilog testbench in Xilinx Vivado Behavioral Simulation.
+
+The simulation results demonstrate:
+
+- Correct state transitions
+- Correct reset behavior
+- Correct output generation
+- Successful 1011 pattern detection
+
+## Repository Structure
+
+```text
+RTL/
+Testbenches/
+Simulation_Screenshots/
+Report/
