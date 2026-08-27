@@ -64,3 +64,45 @@ Implemented a three-state FSM with the following state transition sequence:
 
 ```text
 S0 → S1 → S2 → S0
+### Task 5 – Processor Datapath Design and Verification
+
+Designed and verified fundamental processor datapath components using **Verilog HDL** and **Xilinx Vivado**.
+
+The task focused on designing individual processor datapath components, developing testbenches, performing behavioral simulations, and integrating the components into a simple Mini Datapath.
+
+The task included:
+
+- Arithmetic Logic Unit (ALU)
+- Register File
+- Random Access Memory (RAM)
+- Read Only Memory (ROM)
+- Mini Datapath
+- ALU operation selection
+- Register read and write operations
+- RAM read and write operations
+- ROM address-based data retrieval
+- Datapath integration
+- ALU result write-back
+- Testbench development
+- Behavioral simulation using Xilinx Vivado
+- Waveform analysis and functional verification
+
+#### Arithmetic Logic Unit (ALU)
+
+Implemented a **4-bit Arithmetic Logic Unit (ALU)** capable of performing arithmetic and logical operations on two 4-bit inputs.
+
+The ALU supports the following operations:
+
+| `sel` | Operation | Function |
+|:---:|---|---|
+| `000` | Addition | `A + B` |
+| `001` | Subtraction | `A - B` |
+| `010` | AND | `A & B` |
+| `011` | OR | `A \| B` |
+| `100` | XOR | `A ^ B` |
+
+For verification, the following input values were used:
+
+```text
+A = 1010
+B = 0011
