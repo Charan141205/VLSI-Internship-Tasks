@@ -8,6 +8,7 @@ This repository contains the assignments, Verilog HDL implementations, simulatio
 - ✅ **Task 2 – Verilog HDL & RTL Design of Combinational Circuits**
 - ✅ **Task 3 – Sequential Circuit Design and Simulation**
 - ✅ **Task 4 – RTL Design of Finite State Machines (FSM) and Control Units**
+- ✅ **Task 5 – Processor Datapath Design and Verification**
 
 ## Task Overview
 
