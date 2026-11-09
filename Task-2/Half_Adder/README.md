@@ -1,38 +1,47 @@
 # Half Adder using Verilog HDL
 
-## Objective
+## 📌 Objective
 
-Design and simulate a Half Adder using Verilog HDL.
+Design and simulate a 1-bit Half Adder circuit using Verilog HDL RTL modeling.
 
-## Logic
+---
 
-- Sum = A XOR B
-- Carry = A AND B
+## 🔬 Boolean Equations
 
-## Files
+- **Sum:** `sum = a ^ b`
+- **Carry:** `carry = a & b`
+
+---
+
+## 📁 Source Files
 
 | File | Description |
 |------|-------------|
-| half_adder.v | RTL implementation of Half Adder |
-| tb_half_adder.v | Testbench for Half Adder |
+| [`halfadder.v`](halfadder.v) | Verilog RTL module for Half Adder |
+| [`tb_halfadder.v`](tb_halfadder.v) | Testbench exercising all combinations of `(a, b)` |
+| [`half_adder_waveform.png`](half_adder_waveform.png) | Simulation waveform captured from Vivado |
 
-## Software Used
+---
 
-- Xilinx Vivado 2025.2
+## 📊 Truth Table
 
-## Simulation
+| `a` | `b` | Sum (`sum`) | Carry (`carry`) |
+|:---:|:---:|:---:|:---:|
+| 0 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 1 | 0 |
+| 1 | 1 | 0 | 1 |
 
-Behavioral simulation was performed using the Vivado Simulator.
+---
 
-## Truth Table
+## 📈 Simulation Waveform
 
-| A | B | Sum | Carry |
-|---|---|-----|-------|
-|0|0|0|0|
-|0|1|1|0|
-|1|0|1|0|
-|1|1|0|1|
+Behavioral simulation was conducted in **Xilinx Vivado 2025.2**.
 
-## Result
+![Half Adder Simulation Waveform](half_adder_waveform.png)
 
-The Half Adder was successfully implemented and verified using simulation.
+---
+
+## ✅ Result
+
+The Half Adder RTL design accurately computes sum and carry bits matching expected boolean operations across all input conditions.

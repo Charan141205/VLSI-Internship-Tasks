@@ -1,42 +1,51 @@
 # Logic Gates using Verilog HDL
 
-## Objective
+## 📌 Objective
 
-Design and simulate basic combinational logic gates using Verilog HDL.
+Design, model, and simulate all basic combinational logic gates using Verilog HDL RTL continuous assignment.
 
-## Logic Gates Implemented
+---
 
-- AND Gate
-- OR Gate
-- NOT Gate
-- NAND Gate
-- NOR Gate
-- XOR Gate
+## 🔬 Implemented Gates & Logic Expressions
 
-## Files
+- **AND:** `y_and = a & b`
+- **OR:** `y_or = a | b`
+- **NOT:** `y_not = ~a`
+- **NAND:** `y_nand = ~(a & b)`
+- **NOR:** `y_nor = ~(a | b)`
+- **XOR:** `y_xor = a ^ b`
+
+---
+
+## 📁 Source Files
 
 | File | Description |
 |------|-------------|
-| logic_gates.v | Verilog modules for all logic gates |
-| tb_logic_gates.v | Testbench for verification |
+| [`logicgates.v`](logicgates.v) | Verilog RTL module modeling all 6 gates |
+| [`tb_logicgates.v`](tb_logicgates.v) | Testbench applying all combinations of `(a, b)` |
+| [`logic_gates_waveform.png`](logic_gates_waveform.png) | Simulation waveform captured from Vivado |
 
-## Software Used
+---
 
-- Xilinx Vivado 2025.2
+## 📊 Truth Table
 
-## Simulation
+| `a` | `b` | AND (`y_and`) | OR (`y_or`) | NOT (`y_not`) | NAND (`y_nand`) | NOR (`y_nor`) | XOR (`y_xor`) |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 0 | 0 | 0 | 0 | 1 | 1 | 1 | 0 |
+| 0 | 1 | 0 | 1 | 1 | 1 | 0 | 1 |
+| 1 | 0 | 0 | 1 | 0 | 1 | 0 | 1 |
+| 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
 
-Behavioral simulation was performed using the Vivado Simulator.
+---
 
-## Result
+## 📈 Simulation Waveform
 
-All logic gates were successfully simulated and verified.
+Behavioral simulation was performed using **Xilinx Vivado 2025.2 Simulator (xsim)**.
 
-## Truth Table
+![Logic Gates Simulation Waveform](logic_gates_waveform.png)
 
-| A | B | AND | OR | NOT(A) | NAND | NOR | XOR |
-|---|---|-----|----|--------|------|-----|-----|
-|0|0|0|0|1|1|1|0|
-|0|1|0|1|1|1|0|1|
-|1|0|0|1|0|1|0|1|
-|1|1|1|1|0|0|0|0|
+---
+
+## ✅ Result
+
+All six logic gates operated according to digital logic specifications and were verified under all input stimulus conditions.
